@@ -36,9 +36,26 @@ module.exports = function() {
   var categories = {};
 
 
+  /**
+   * Uniq array of words used
+   * during the training.
+   */
+
   var dictionary = [];
 
+
+  /**
+   * Number of training by
+   * category.
+   */
+
   var count = {};
+
+
+  /**
+   * Frequency of words
+   * by category.
+   */
 
   var frequency = {};
 
@@ -143,7 +160,13 @@ module.exports = function() {
 
 
   /**
-   * Retun 
+   * Return the frequencies of 
+   * a word in a sentence.
+   * @note could be used in classify
+   *
+   * @param {Array} words
+   * @param {Object}
+   * @api private
    */
 
   function frequence(words) {
