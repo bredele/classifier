@@ -1,0 +1,24 @@
+{
+  "name": "classifier",
+  "version": "0.0.0",
+  "description": "natural language classifier using naive bayes algorithm",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bredele/classifier.git"
+  },
+  "keywords": [
+    "natural",
+    "language",
+    "bayes"
+  ],
+  "author": "Olivier Wietrich",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bredele/classifier/issues"
+  },
+  "homepage": "https://github.com/bredele/classifier"
+}
