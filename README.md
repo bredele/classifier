@@ -1,6 +1,6 @@
-# classifier
+# Classifier
 
-## usage
+## Usage
 
 ```js
   var classifier = require('classifier');
@@ -13,7 +13,9 @@
   natural.guess('is it cold today?'); // => weather 
 ```
 
-## license
+## API
+
+## License
 
 The MIT License (MIT)
 
