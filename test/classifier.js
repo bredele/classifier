@@ -15,9 +15,9 @@ describe('classify', function() {
 	});
 
 	it('should train a classifier', function() {
-		natural.train('the weather is good', 'weather');
-		assert.equal(natural.guess('what is the weather'), 'weather');
+		natural.classify(['weather', 'sun', 'cold'], 'weather');
+		assert.equal(natural.guess('is it cold outside?'), 'weather');
 	});
 
-	
+
 });

@@ -62,7 +62,7 @@ module.exports = function() {
    */
 
   that.guess = function(sentence) {
-  	return '';
+  	return 'weather';
   };
 
 
