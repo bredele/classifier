@@ -14,7 +14,21 @@
 
 module.exports = function() {
 
+	/**
+	 * Classifier instance.
+	 */
+
   var that = {};
+
+
+  var total = 0;
+
+
+  var words = {
+  	hello : ['welcome'],
+  	coucou : ['welcome', 'olivier'],
+  	olivier: ['olivier']
+  }
 
 
   /**
@@ -26,6 +40,15 @@ module.exports = function() {
    */
 
   that.train = function(sentence, category) {
+  	return that;
+  };
+
+  /**
+   *
+   */
+
+  that.classify = function(arr, category) {
+  	total++;
   	return that;
   };
 

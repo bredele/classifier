@@ -4,7 +4,7 @@
   "description": "natural language classifier using naive bayes algorithm",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/bredele/classifier/issues"
   },
-  "homepage": "https://github.com/bredele/classifier"
+  "homepage": "https://github.com/bredele/classifier",
+  "devDependencies": {
+    "mocha": "^2.3.4"
+  }
 }
