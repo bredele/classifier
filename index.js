@@ -63,18 +63,6 @@ module.exports = function() {
   /**
    * Train classifier.
    *
-   * @param {String} sentence
-   * @param {String} category
-   * @api public
-   */
-
-  that.train = function(sentence, category) {
-  	return that;
-  };
-
-
-
-  /**
    * Classify array of words with category.
    *
    * @param {Array} arr
@@ -82,7 +70,7 @@ module.exports = function() {
    * @api public
    */
 
-  that.classify = function(arr, category) {
+  that.train = function(arr, category) {
   	var l = arr.length;
   	update(category, l);
   	while(l--) {
@@ -91,19 +79,6 @@ module.exports = function() {
   		if(~!dictionary.indexOf(word)) dictionary.push(word);
   	}
   	return that;
-  };
-
-
-  /**
-   * Guess category.
-   *
-   * @param {String} sentence
-   * @param {String}
-   * @api public
-   */
-
-  that.guess = function(sentence) {
-  	return '';
   };
 
 
@@ -122,6 +97,8 @@ module.exports = function() {
 
 
   /**
+   * Guess category.
+   *
    * Return a uniq category for
    * a list of tokens.
    *
@@ -129,7 +106,7 @@ module.exports = function() {
    * @api public
    */
 
-  that.categorize = function(arr) {
+  that.guess = function(arr) {
   	var max = -Infinity;
   	var tokens = frequence(arr);
   	var choice;
@@ -144,18 +121,6 @@ module.exports = function() {
   		 }
   	}
   	return choice;
-  };
-
-
-  /**
-   * Clone classifier.
-   *
-   * @return {Object}
-   * @api public
-   */
-
-  that.clone = function() {
-  	return {};
   };
 
 
