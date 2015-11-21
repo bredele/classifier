@@ -1,5 +1,13 @@
 # Classifier
 
+Classifier can help you understand the language of short texts and make predictions about how to handle them. For example, `classifier` could be use to:
+
+  - classify tweets into set of classes
+  - analyze text messages
+  - analyze sentimens
+  - etc
+
+
 ## Usage
 
 ```js
@@ -17,13 +25,15 @@
 
 ### train(words, category)
 
-Classifiy array of words with a category.
+Classifiy an array of words with a category.
 
 ```js
 natural.train(['sun', 'cold'], 'weather');
 ```
 
 ### guess(words)
+
+Categorize an array of words.
 
 ```js
 natural.guess(['outside', 'cold']);
