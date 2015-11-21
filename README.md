@@ -6,18 +6,29 @@
   var classifier = require('classifier');
 
   var natural = classifier();
-  natural.train('what is the weather today?', 'weather');
-  natural.train('the weather is cold', 'weather');
-  natural.train('you are cold blooded', 'asshole');
+  natural.train(['what', 'is', 'the', 'weather', 'today'], 'weather');
+  natural.train(['it', 'is', 'cold'], 'weather');
+  natural.train(['you', 'are', 'cold', 'blooded'], 'asshole');
 
-  natural.guess('is it cold today?'); // => weather 
+  natural.guess(['it', 'looks', 'cold']); // => weather 
 ```
 
 ## API
 
-### train
+### train(words, category)
 
-### clone
+Classifiy array of words with a category.
+
+```js
+natural.train(['sun', 'cold'], 'weather');
+```
+
+### guess(words)
+
+```js
+natural.guess(['outside', 'cold']);
+// => weather
+```
 
 ## License
 
