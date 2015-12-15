@@ -4,7 +4,7 @@ Classifier can help you understand the language of short texts and make predicti
 
   - classify tweets into set of classes
   - analyze text messages
-  - analyze sentimens
+  - analyze sentiments
   - etc
 
 
