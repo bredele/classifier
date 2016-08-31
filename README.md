@@ -16,7 +16,7 @@ Classifier can help you understand the language of short texts and make predicti
   var natural = classifier();
   natural.train(['what', 'is', 'the', 'weather', 'today'], 'weather');
   natural.train(['it', 'is', 'cold'], 'weather');
-  natural.train(['you', 'are', 'cold', 'blooded'], 'asshole');
+  natural.train(['you', 'are', 'cold', 'blooded'], 'mean');
 
   natural.guess(['it', 'looks', 'cold']); // => weather 
 ```
